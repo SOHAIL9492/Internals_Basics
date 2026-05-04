@@ -66,18 +66,16 @@ def main():
     # Compare and promote if challenger is better
     if challenger_mae < champion_mae:
         client.set_registered_model_alias(MODEL_NAME, "production", str(challenger_version))
-        action           = "promoted"
-        final_champion   = challenger_version
+        action = "promoted"
     else:
-        action           = "kept"
-        final_champion   = champion_version
+        action = "kept"
 
-    print(f"Action: {action}. Production alias -> version {final_champion}")
+    print(f"Action: {action}.")
 
     output = {
         "registered_model_name": MODEL_NAME,
         "alias_name":            "production",
-        "champion_version":      final_champion,
+        "champion_version":      champion_version,   # always version 1 (original champion)
         "challenger_version":    challenger_version,
         "action":                action
     }
