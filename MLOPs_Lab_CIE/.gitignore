@@ -1,4 +1,6 @@
 __pycache__/
 *.pyc
 mlruns/
+mlruns.db
 .DS_Store
+

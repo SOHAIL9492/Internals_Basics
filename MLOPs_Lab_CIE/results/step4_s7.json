@@ -1,7 +1,7 @@
 {
     "registered_model_name": "gallerypulse-auction-price-lakhs-predictor",
     "alias_name": "production",
-    "champion_version": 1,
+    "champion_version": 2,
     "challenger_version": 2,
-    "action": "kept"
+    "action": "promoted"
 }

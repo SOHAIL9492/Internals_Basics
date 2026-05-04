@@ -4,7 +4,7 @@
     "port": 8000,
     "health_response": {
         "status": "running",
-        "model": "LinearRegression",
+        "model": "Ridge",
         "version": "1.0"
     },
     "test_input": {
@@ -13,5 +13,5 @@
         "medium_type_index": 2,
         "exhibition_count": 6
     },
-    "prediction": 191.35923005203935
+    "prediction": 36.415928082834085
 }
