@@ -1,0 +1,17 @@
+{
+    "health_endpoint": "/health",
+    "predict_endpoint": "/estimate",
+    "port": 8000,
+    "health_response": {
+        "status": "running",
+        "model": "LinearRegression",
+        "version": "1.0"
+    },
+    "test_input": {
+        "artist_reputation_score": 6.8,
+        "artwork_age_years": 136,
+        "medium_type_index": 2,
+        "exhibition_count": 6
+    },
+    "prediction": 191.35923005203935
+}
